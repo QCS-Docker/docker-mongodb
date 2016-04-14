@@ -21,7 +21,7 @@ RUN set -x \
 	&& chmod +x /usr/local/bin/gosu \
 	&& gosu nobody true
 
-ENV MONGO_VERSION 2.4.14
+ENV MONGO_VERSION 2.4.8
 
 RUN set -x \
 	&& wget -O mongo.tgz "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-$MONGO_VERSION.tgz" \
